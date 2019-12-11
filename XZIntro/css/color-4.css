@@ -1,0 +1,141 @@
+/*! ===== button rounded style =====*/
+.btn-rounded {
+  background-color: #FF7E01;
+  border: 2px solid #FF7E01;
+}
+.btn-rounded.btn-o {
+  color: #FF7E01;
+  border-color: #FF7E01;
+}
+/*! ===== button square style =====*/
+.btn-square {
+  background-color: #FF7E01;
+  border: 2px solid #FF7E01;
+}
+.btn-square.btn-o {
+  color: #FF7E01;
+  border-color: #FF7E01;
+}
+.btn-circle {
+  /*===== button circle style =====*/
+  background-color: #FF7E01;
+  border: 1px solid #FF7E01;
+}
+.btn-circle.btn-o {
+  border-color: #FF7E01;
+}
+.btn-circle.btn-o:hover, .btn-circle.btn-o:focus {
+  background-color: #FF7E01 !important;
+}
+/*===== heading style 2 =====*/
+.heading-2:before {
+  background-color: #FF7E01;
+}
+
+/*! ===== link style =====*/
+.link-text {
+  color: #FF7E01;
+}
+header.color-bg {
+  background-color: #FF7E01;
+}
+header.color-bg {
+  background-color: #FF7E01;
+}
+header.gradient {
+  background: -webkit-linear-gradient(315deg, #FF7E01, #ff3894);
+  background: -o-linear-gradient(315deg, #FF7E01, #ff3894);
+  background: linear-gradient(135deg, #FF7E01, #ff3894);
+}
+header.gradient-animation {
+  background: #FF7E01;
+  /* IE 10+ */
+  background: -webkit-linear-gradient(45deg, #FF7E01 0%, #FF7E01 15%, #ff3894 50%, #FF7E01 85%, #FF7E01 100%);
+  background: -o-linear-gradient(45deg, #FF7E01 0%, #FF7E01 15%, #ff3894 50%, #FF7E01 85%, #FF7E01 100%);
+  background: linear-gradient(45deg, #FF7E01 0%, #FF7E01 15%, #ff3894 50%, #FF7E01 85%, #FF7E01 100%);
+  background-size: 4000px 100%;
+  animation: background-gradiant-animation 15s linear infinite;
+}
+header.img-color .header-overlay {
+    background-color: rgba(255, 126, 1, .5);
+    width: 100%;
+    height: 100%;
+}
+header.img-gradient .header-overlay {
+  background: -webkit-linear-gradient(315deg, rgba(255, 126, 1, .5) , rgba(255, 56, 148, 0.5));
+  background: -o-linear-gradient(315deg, rgba(255, 126, 1, .5) , rgba(255, 56, 148, 0.5));
+  background: linear-gradient(135deg, rgba(255, 126, 1, .5) , rgba(255, 56, 148, 0.5));
+}
+header.img-gradient-animation .header-overlay{
+  background: #21b8af;
+  /* IE 10+ */
+  background: -webkit-linear-gradient(45deg, rgba(255, 126, 1, 0.5) 0%, rgba(255, 126, 1, 0.5) 15%, rgba(255, 56, 148, 0.5) 50%, rgba(255, 126, 1, 0.5) 85%, rgba(255, 126, 1, 0.5) 100%);
+  background: -o-linear-gradient(45deg, rgba(255, 126, 1, 0.5) 0%, rgba(255, 126, 1, 0.5) 15%, rgba(255, 56, 148, 0.5) 50%, rgba(255, 126, 1, 0.5) 85%, rgba(255, 126, 1, 0.5) 100%);
+  background: linear-gradient(45deg, rgba(255, 126, 1, 0.5) 0%, rgba(255, 126, 1, 0.5) 15%, rgba(255, 56, 148, 0.5) 50%, rgba(255, 126, 1, 0.5) 85%, rgba(255, 126, 1, 0.5) 100%);
+  background-size: 4000px 100%;
+  animation: background-gradiant-animation 15s linear infinite;
+}
+
+
+header.video-gradient .header-overlay {
+  background: -webkit-linear-gradient(315deg, rgba(255, 126, 1, .5) , rgba(255, 56, 148, 0.5));
+  background: -o-linear-gradient(315deg, rgba(255, 126, 1, .5) , rgba(255, 56, 148, 0.5));
+  background: linear-gradient(135deg, rgba(255, 126, 1, .5) , rgba(255, 56, 148, 0.5));
+}
+header.video-gradient-animation .header-overlay{
+  background: #21b8af;
+  /* IE 10+ */
+  background: -webkit-linear-gradient(45deg, rgba(255, 126, 1, 0.5) 0%, rgba(255, 126, 1, 0.5) 15%, rgba(255, 56, 148, 0.5) 50%, rgba(255, 126, 1, 0.5) 85%, rgba(255, 126, 1, 0.5) 100%);
+  background: -o-linear-gradient(45deg, rgba(255, 126, 1, 0.5) 0%, rgba(255, 126, 1, 0.5) 15%, rgba(255, 56, 148, 0.5) 50%, rgba(255, 126, 1, 0.5) 85%, rgba(255, 126, 1, 0.5) 100%);
+  background: linear-gradient(45deg, rgba(255, 126, 1, 0.5) 0%, rgba(255, 126, 1, 0.5) 15%, rgba(255, 56, 148, 0.5) 50%, rgba(255, 126, 1, 0.5) 85%, rgba(255, 126, 1, 0.5) 100%);
+  background-size: 4000px 100%;
+  animation: background-gradiant-animation 15s linear infinite;
+}
+header nav .navbar-nav .menu-item.active, header nav .navbar-nav .menu-item:hover, header nav .navbar-nav .menu-item:focus {
+  border-top: 4px solid #FF7E01;
+}
+header nav.nav2 {
+  background-color: #FF7E01;
+}
+header nav.nav2 .btn-circle:hover {
+  color: #FF7E01 !important;
+}
+header nav .navbar-toggle:hover, header nav .navbar-toggle:focus {
+  background-color: #FF7E01 !important; 
+}
+@media only screen and (max-width: 991px) {
+  header nav .navbar-collapse {
+    background-color: #FF7E01;
+  }
+  header nav .btn-circle:hover {
+    color: #FF7E01 !important; 
+  }
+}
+
+.header-single-info .form-box .heading-5 {
+  background-color: #FF7E01;
+}
+.about-us .about-us-content ul.nav-tabs li.active {
+  border-bottom: 2px solid #FF7E01;
+}
+.shape-left, .shape-right {
+  background-color: #FF7E01;
+}
+.shape-left:before, .shape-right:before {
+  border: 1px solid #FF7E01;
+}
+.works .work-nav li button:hover:after, .works .work-nav li button.mixitup-control-active:after, .works .work-nav li button:focus:after {
+  background-color: #FF7E01;
+}
+.works .work-list .item .item-info .link-text:before {
+  background-color: #FF7E01;
+}
+.works .see-more-works:hover {
+  color: #FF7E01;
+}
+footer .single-menu .social-links li a:hover {
+  color: #FF7E01;
+}
+.quoteModal .modal-content .modal-header {
+  background-color: #FF7E01; 
+}

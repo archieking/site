@@ -1,0 +1,9 @@
+.sponsor .sponsor-carousel {
+  background-color: red; }
+  .sponsor .sponsor-carousel .img-box {
+    width: 100%;
+    height: 55px;
+    text-align: center; }
+    .sponsor .sponsor-carousel .img-box img {
+      width: 100%;
+      height: auto; }

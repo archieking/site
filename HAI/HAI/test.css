@@ -1,0 +1,53 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#nav nav ul li {
+  position: relative;
+}
+
+/* #nav nav ul ul li {
+  background-color: #cc6600;
+}
+
+#nav nav ul ul li a {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+} */
+
+#nav nav ul ul {
+  visibility: hidden;
+  position: absolute;
+  left: -40.5px;
+}
+
+#nav nav ul li:hover ul {
+  visibility: visible;
+  z-index: 100;
+}
+
+#nav nav {
+  background-color: #cc6600;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul a {
+  display: inline-block;
+  line-height: 50px;
+  width: 90px;
+  text-align: center;
+  border-right: 1px solid #834524;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.6em;
+  transition: background 0.5s linear;
+}
+
+nav ul a:hover {
+  background-color: #834524;
+}

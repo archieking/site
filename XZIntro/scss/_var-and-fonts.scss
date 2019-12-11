@@ -1,0 +1,45 @@
+/**
+ * ----------------------------------------------
+ * COLOR CODES
+ * ----------------------------------------------
+ *
+*/
+
+
+$white:                 #ffffff;
+$black:                 #000000;
+$theme-color:           #21b8af;
+$primary:               #8100f7;
+$title-text-color:      #333333;
+$p-text-color:          #616161;
+$color1:                #e5e5e5;
+$color2:                #b1b1b1;
+$color3:                #555555;
+$color4:                #F5F5F5;
+$color5:                #bbbbbb;
+$footer-bg:             #252525;
+$copyright-bg:          #212121;
+
+$clr-1:		#FFD012;
+$clr-2:		#21D367;
+$clr-3:		#FF7E01;
+$clr-4:		#21b8af;
+
+/**
+ * ----------------------------------------------
+ * Font face
+ * 
+ */
+
+
+$Montserrat: "Montserrat", sans-serif;
+// Montserrat Display Font
+@include font-face($Montserrat, '../fonts/montserrat-thin', 100, normal);
+@include font-face($Montserrat, '../fonts/montserrat-extralight', 200, normal);
+@include font-face($Montserrat, '../fonts/montserrat-light', 300, normal);
+@include font-face($Montserrat, '../fonts/montserrat-regular', 400, normal);
+@include font-face($Montserrat, '../fonts/montserrat-medium', 500, normal);
+@include font-face($Montserrat, '../fonts/montserrat-semibold', 600, normal);
+@include font-face($Montserrat, '../fonts/montserrat-bold', 700, normal);
+@include font-face($Montserrat, '../fonts/montserrat-extrabold', 800, normal);
+@include font-face($Montserrat, '../fonts/montserrat-black', 900, normal);

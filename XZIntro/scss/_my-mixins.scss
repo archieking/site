@@ -1,0 +1,54 @@
+// ----------------------------------------------
+//   ALL MIXIN FUNCTIONS
+// ----------------------------------------------
+
+
+// Font mixin
+// use -> @include font-face(font-family, '/url or /src', font-width, font-style);
+// Example @include font-face($roboto, '/fonts/roboto_Bold', 700, normal);
+@mixin font($font-family,$font-weight,$font-size){
+    font: $font-weight $font-size $font-family;
+}
+
+// Scrollbars mixin
+// use -> @include scrollbars(size,  lighten(color,20%));
+// Example -> @include scrollbars(.5em,  lighten($theme-color,20%));
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+    &::-webkit-scrollbar {
+        width:  $size;
+        height: $size;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+    }
+    &::-webkit-scrollbar-track {
+        background: $background-color;
+    }
+}
+
+// Media query *only max-width
+// use -> @include media-max(max-screen-size) {css content;}
+// Example -> @include media-max(320px) {height: 50px;}
+@mixin media-max($max){
+    @media only screen and (max-width: $max){
+        @content;
+    }
+}
+
+// Media query *only min-width
+// use -> @include media-min(min-screen-size) {css content;}
+// Example -> @include media-min(320px) {height: 50px;}
+@mixin media-min($min){
+    @media only screen and (min-width: $min){
+        @content;
+    }
+}
+// Media query min-width and max-width
+// use -> @include media-min-max(min-screen-size,max-screen-size) {css content;}
+// Example -> @include media-min-max(320px,480px) {height: 50px;}
+@mixin media-min-max($min,$max){
+    @media only screen and (min-width: $min) and (max-width: $max){
+        @content;
+    }
+}

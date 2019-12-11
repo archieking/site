@@ -1,0 +1,244 @@
+/**
+ * ----------------------------------------------
+ * SIMPLE RESET
+ * ----------------------------------------------
+ */
+*{
+    @include font($Montserrat,400,16px);
+    @include box-sizing(border-box);
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $white;
+    @include scrollbars(.5em,  lighten(#666,20%));
+}
+
+/**
+ * ----------------------------------------------
+ * CUSTOM CLASS
+ * ----------------------------------------------
+ */
+.page-wrapper{
+    position: relative;
+}
+.fix-container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    @include media-max(500px){
+        padding: 0 3%;
+    }
+    @include media-min-max(500px,800px){
+        padding: 0 3%;
+    }
+}
+.white-space{
+    height: 130px;
+    width: 100%;
+    @include media-min(1370px){
+        height: 160px;
+    }
+    @include media-max(500px){
+        height: 80px;
+    }
+    @include media-max(400px) {
+        height: 50px;
+    }
+}
+.fix{
+    margin: 0px;
+    padding: 0px;
+}
+.p-none{
+    padding: 0px;
+}
+.m-none{
+    margin: 0px;
+}
+.clear{
+    clear: both;
+}
+.result{
+    .alert{
+        text-align: center;
+        @include font($Montserrat,400,15px);
+        line-height: 25px;
+    }
+    margin-top: 20px;
+}
+/*! ===== button rounded style =====*/
+.btn-rounded {
+    display: inline-block;
+    line-height: 45px;
+    padding: 13px 30px;
+    text-align: center;
+    background-color: $theme-color;
+    color: $white ;
+    @include font($Montserrat,600,16px);
+    border-radius: 5px;
+    display: inline-block;
+    border: 2px solid $theme-color;
+    @include transition(all .2s ease-in-out);
+    &.btn-o{
+        background-color: $white;
+        color: $theme-color;
+        border-color: $theme-color;
+    }
+}
+.btn-rounded:hover,.btn-rounded:focus{
+    background-color: darken($theme-color,15%);
+    border-color: darken($theme-color,15%);
+    outline: none;
+    color: $white;
+    text-decoration: none;
+}
+/*! ===== button square style =====*/
+.btn-square{ 
+    display: inline-block;
+    line-height: 45px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    background-color: $theme-color;
+    color: $white ;
+    @include font($Montserrat,600,16px);
+    border-radius: 0;
+    border: 2px solid $theme-color;
+    @include transition(all .2s ease-in-out);
+    &.btn-o{
+        background-color: $white;
+        color: $theme-color;
+        border-color: $theme-color;
+    }
+    a{
+        color: $white;
+        @include font($Montserrat,600,16px);
+        text-decoration:none;
+    }
+}
+.btn-square:hover,.btn-square:focus{
+    background-color: darken($theme-color,15%);
+    border-color: darken($theme-color,15%);
+    outline: none;
+    color: $white;
+}
+.btn-circle{/*===== button circle style =====*/
+    display: inline-block;
+    line-height: 45px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    background-color: $theme-color;
+    color: $white !important;
+    @include font($Montserrat,400,16px);
+    border-radius: 25px;
+    border: 1px solid $theme-color;
+    @include transition(all .2s ease-in-out);
+    &.btn-o{
+        background: transparent;
+        color: $white;
+        border-color: $theme-color;
+        &:hover,&:focus{
+            background-color: $theme-color !important;
+            color: $white !important;
+            border-color: $white;
+        }
+    }
+}
+.btn-circle:hover,.btn-circle:focus{
+    background-color: darken($theme-color,15%);
+    border-color: darken($theme-color,15%);
+    outline: none;
+    color: $white;
+}
+/*===== heading style 1 =====*/
+.heading-1{
+    @include font($Montserrat,400,48px);
+    color: $white;
+    @media only screen and (max-width: 991px){
+        font-size: 40px;
+    }
+    @media only screen and (max-width: 768px){
+        font-size: 32px;
+    }
+    @media only screen and (max-width: 425px){
+        font-size: 28px;
+    }
+}
+/*===== heading style 2 =====*/
+.heading-2{ 
+    @include font($Montserrat,600,42px);
+    color: $title-text-color;
+    margin-bottom: 60px;
+    display: inline-block;
+    position:relative;
+    &:before{
+        content: "";
+        width: 52px;
+        height: 4px;
+        background-color:$theme-color;
+        display: block;
+        position: absolute;
+        bottom: -6px;
+        left: 0px;        
+    }
+    @media only screen and (max-width: 991px){
+        font-size: 36px;
+    }
+    @media only screen and (max-width: 768px){
+        font-size: 30px;
+    }
+}
+/*===== heading style 3 =====*/
+.heading-3{
+    @include font($Montserrat,600,30px);
+    color: $title-text-color;
+}
+/*===== heading style 4 =====*/
+.heading-4{ 
+    @include font($Montserrat,600,24px);
+    color: $title-text-color;
+}
+.heading-5{   /*===== heading style 5 =====*/  
+    @include font($Montserrat,400,20px);
+    color: $title-text-color;
+}
+/*===== heading style 6 =====*/
+.heading-6{ 
+    @include font($Montserrat,400,18px);
+    color: $title-text-color;
+}
+/*===== paragraph style 1 =====*/
+.p-text{
+    @include font($Montserrat,400,15px);
+    color: $p-text-color;
+    line-height: 25px;
+    margin: 0px;
+}
+/*! ===== link style =====*/
+.link-text{  
+    text-decoration: none;
+    @include font($Montserrat,600,16px);
+    color: $theme-color;
+    @include transition(all .2s ease-in-out);
+    &:hover,&:focus{
+        text-decoration: none;
+        outline: none;
+        color: darken($theme-color,15%);
+    }
+}
+/*! ===== input field style =====*/
+.input-field{ 
+    border: 1px solid $p-text-color;
+    padding: 12px;
+    border-radius: 5px;
+    @include font($Montserrat,400,14px);
+    &:hover,&:focus{
+        &::placeholder { 
+            color: $p-text-color;
+            opacity: 1;
+            @include transition(all .2s ease-in-out);
+        }
+    }
+}

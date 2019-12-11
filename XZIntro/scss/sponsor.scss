@@ -1,0 +1,25 @@
+.sponsor{
+	background-color: $white;
+	.sponsor-carousel{
+		padding: 60px 0;
+		.item{}
+		.img-box{
+			width: 100%;
+			text-align: center;
+			min-height: 55px;
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
+			img{
+				width:auto;
+				height:auto;
+			}
+			&:hover{
+				img{
+					@include transform ( scale(1.1));
+					@include transition(all .2s ease-in-out);
+				}
+			}
+		}
+	}
+}

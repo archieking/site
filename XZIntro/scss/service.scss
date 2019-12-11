@@ -1,0 +1,58 @@
+.service{
+	padding: 100px 0;
+	text-align:center;
+	background-color: $white;
+	.service-list{
+		margin-top: 40px;
+		.row{
+			&:first-child{
+				border-bottom:1px solid $color1;
+				@media only screen and (max-width: 991px){
+					border-bottom:0px;
+				}
+			}
+			.list-item{
+				padding: 30px 20px;
+				display:inline-block;
+				border-right:1px solid $color1;
+				&:last-child{
+					border-right: 0px;
+				}
+				i{
+					font-size: 72px;
+					margin-bottom: 35px;
+					@media only screen and (max-width: 768px){
+						margin-bottom: 20px;
+						font-size: 50px;
+					}
+				}
+				.service-heading{
+					@include font($Montserrat,500,24px);
+					margin-bottom:30px;
+					margin-top: 0;
+					@media only screen and (max-width: 768px){
+						margin-bottom: 10px;
+						font-size: 18px;
+					}
+				}
+				.service-dtls{
+					@include font($Montserrat,400,14px);
+					color: $p-text-color;
+					line-height: 28px;
+					@media only screen and (max-width: 768px){
+						line-height: 20px;
+					}
+				}
+				@media only screen and (max-width: 991px){
+					border-right:0px;
+				}
+				@media only screen and (max-width: 768px){
+					padding: 10px;
+				}
+			}
+		}
+		@media only screen and (max-width: 768px){
+			margin-top: 0;
+		}
+	}
+}

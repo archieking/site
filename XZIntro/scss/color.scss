@@ -1,0 +1,67 @@
+@import "bourbon";
+@import "neat";
+@import "_var-and-fonts";
+@import "_my-mixins";
+.color-changer{
+	position: fixed;
+	top: 200px;
+	left: -260px;
+	z-index: 99;
+	background-color: $white;
+	padding: 20px ;
+    width: 260px;
+    .color-text{
+    	@include font($Montserrat,400,24px);
+    	color: $title-text-color;
+        margin-bottom: 25px;
+    }
+    ul{
+    	list-style: none;
+    	li{
+    		display: inline-block;
+    		a{
+                @include size(50px);
+                cursor: pointer;
+                display: block;
+            }
+            &:nth-child(1){
+                a{
+                    border: 3px solid darken($clr-4,10%);
+                    background-color: $clr-4;
+                }
+            }
+            &:nth-child(2){
+                a{
+                    border: 3px solid darken($clr-1,10%);
+                    background-color: $clr-1;
+                }
+            }
+            &:nth-child(3){
+                a{
+                    border: 3px solid darken($clr-2,10%);
+                    background-color: $clr-2;
+                }
+            }
+            &:nth-child(4){
+                a{
+                    border: 3px solid darken($clr-3,10%);
+                    background-color: $clr-3;
+                }
+            }
+    	}
+    }
+    .main-inner-box{
+        position: relative;
+    }
+    .cog{
+        @include size(60px);
+        position: absolute;
+        right: -80px;
+        top: -40px;
+        border-left: 1px solid #eee;
+        background-color: $white;
+        text-align: center;
+        padding: 7px 0;
+        cursor: pointer;
+    }
+}

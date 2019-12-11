@@ -1,0 +1,49 @@
+.our-members{
+	text-align:center;
+	padding-bottom:40px;
+	background-color: $white;
+}
+.member-list{
+	.list-item{
+		padding: 20px 50px;
+		img{
+			width:100%;
+		}
+	}
+}
+.member-info{
+	.member-name{
+		@include font($Montserrat,400,20px);
+		color: $title-text-color;
+	}
+	.member-position{
+		@include font($Montserrat,600,13px);
+		color: $title-text-color;
+	}
+	.social-link{
+		list-style:none;
+		padding: 20px 0px;
+		margin: 0px;
+		li{
+			display:inline-block;
+			a{
+				text-decoration:none;
+				padding: 0px 5px;
+				font-size: 18px;
+				opacity:0.8;
+				&.fb{
+					color:#46629e;
+				}
+				&.tw{
+					color:#55acee;
+				}
+				&.ln{
+					color:#1c87bd;
+				}
+				&:hover{
+					opacity:1;
+				}
+			}
+		}
+	}
+}

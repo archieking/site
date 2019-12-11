@@ -1,0 +1,116 @@
+footer{
+	background-color:$footer-bg;
+	color:$white;
+	@media only screen and (max-width: 991px){
+		text-align:center;
+	}
+	.white-logo{
+		width: 120px;
+		height: auto;
+	}
+	.single-menu{
+		li{
+			margin: 10px 0;
+		}
+		.heading-3{
+			color: $white;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			@include font($Montserrat,700,12px);
+			margin-bottom: 25px;
+		}
+		.p-text{
+			font-size: 14px;
+			color: $color2;
+			text-decoration: none;
+		}
+		.social-links{
+			list-style: none;
+			li{
+				display: inline-block;
+				margin-right: 20px;
+				a{
+					color: $white;
+					text-decoration: none;
+					i{
+						font-size: 20px;
+					}
+					&:hover{
+						color: $theme-color;
+					}
+				}
+			}
+		}
+		.subscribe-form{
+			max-width: 210px;
+			width: 100%;
+			margin: 0 auto;
+			margin-left: 0;
+			@media only screen and (max-width: 768px){
+				margin-left: auto;
+			}
+			.form-control{
+				width: 70%;
+				float: left;
+				height: 40px;
+				padding: 13px 10px;
+				border-radius: 4px 0px 0px 4px;
+				box-shadow: none;
+			}
+			.subscribe-result{
+				margin: 10px 5px;
+				display: none;
+				@include font($Montserrat,400,15px);
+			}
+			.btn-rounded{
+				float: left;
+				padding: 9px 15px;
+				height: 40px;
+				border-radius: 0px 4px 4px 0px;
+			}
+		}
+		
+		@media only screen and (max-width: 768px){
+			margin: 30px 0;
+			li{
+				margin: 0;
+			}
+			.heading-3{
+				margin-bottom: 10px;
+			}
+			.social-links{
+				margin: 20px 0;
+			}
+		}
+	}
+	.footer-top{
+		padding: 70px 0;
+	}
+}
+.footer-bottom{
+	background-color:$copyright-bg;
+	padding: 40px 0px;
+	.footer-logo{
+		@media only screen and (max-width: 768px){
+			margin: 20px 0;
+		}
+	}
+	.heading-3{
+		@include font($Montserrat,700,12px);
+		color: $white;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		text-decoration: none;
+		@media only screen and (max-width: 768px){
+			margin: 10px 0;
+			display: inline-block;
+			font-weight: 400;
+		}
+	}
+	.copyright-text{
+		margin-top: 60px;
+		@include font($Montserrat,400,12px);
+		color: $color2;
+		text-align: center;
+	}
+}

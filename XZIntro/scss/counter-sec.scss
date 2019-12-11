@@ -1,0 +1,24 @@
+.counter-section{
+	width:100%;
+	background-position: center;
+	background-size: cover;
+	background-image: url("../images/stat-bg.jpg");	
+	display:block;
+	color:$white;
+}
+.counter-list{
+	padding : 60px 0px;
+}
+.counter-item{
+	padding: 20px 40px;
+	text-align:center;
+	span{
+		display:block;
+		margin:10px 0px;
+		&.counter{@include font($Montserrat,400,26px);}
+		&.counter-title{@include font($Montserrat,400,20px);}
+	}
+	@media only screen and (max-width: 768px){
+		padding: 20px;
+	}
+}
